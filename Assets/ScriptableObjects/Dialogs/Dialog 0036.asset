@@ -19,7 +19,7 @@ MonoBehaviour:
     \uAC83 \uAC19\uC2B5\uB2C8\uB2E4."
   nextId: -1
   choices:
-  - {fileID: 11400000, guid: 4b76cd1b3591daf4faaee201bf68615d, type: 2}
-  - {fileID: 11400000, guid: d51e0c0f82df97a46bc24c93a00c6d0b, type: 2}
+  - {fileID: 11400000, guid: 26a692ef7edb859438d47ce684a7126b, type: 2}
+  - {fileID: 11400000, guid: 7b85f849c3aa51643acb3aa30f3b9f3d, type: 2}
   portrait: {fileID: 0}
-  portraitPath: 
+  portraitPath: Characters/Explorer

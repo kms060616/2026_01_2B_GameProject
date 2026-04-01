@@ -18,7 +18,7 @@ MonoBehaviour:
     \uAD6C\uACBD\uD558\uC2DC\uACA0\uC5B4\uC694?"
   nextId: -1
   choices:
-  - {fileID: 11400000, guid: 76fd1a95c761a1a4798142fc05554eb0, type: 2}
-  - {fileID: 11400000, guid: 170e29f93286e8244ba3029c791e4cf9, type: 2}
+  - {fileID: 11400000, guid: e377ba42d831d9344bf5ea7a8f64ab88, type: 2}
+  - {fileID: 11400000, guid: 3e856194908a01b44aa57474830f4d7a, type: 2}
   portrait: {fileID: 0}
-  portraitPath: 
+  portraitPath: Characters/Merchant

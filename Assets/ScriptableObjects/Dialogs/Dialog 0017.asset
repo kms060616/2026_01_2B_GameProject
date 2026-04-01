@@ -18,7 +18,7 @@ MonoBehaviour:
     \uB3C4\uCC29\uD588\uC2B5\uB2C8\uB2E4. \uC5B4\uB290 \uCABD\uC73C\uB85C \uAC00\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
   nextId: -1
   choices:
-  - {fileID: 11400000, guid: 276b85e8057351e4ba753ede10b30b12, type: 2}
-  - {fileID: 11400000, guid: 09d289b7f582e1e43804ea16ff6dd140, type: 2}
+  - {fileID: 11400000, guid: 7558fa8141cbd654d91ddcc6a1b6236d, type: 2}
+  - {fileID: 11400000, guid: 2fea23b3b0c73fa48809688237a3b649, type: 2}
   portrait: {fileID: 0}
-  portraitPath: 
+  portraitPath: Characters/Explorer

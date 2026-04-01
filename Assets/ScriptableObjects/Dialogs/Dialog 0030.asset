@@ -18,8 +18,8 @@ MonoBehaviour:
     \uBB34\uC5C7\uC744 \uAD6C\uB9E4\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
   nextId: -1
   choices:
-  - {fileID: 11400000, guid: 3c2a142b1fa8a8147b5010066bb6184e, type: 2}
-  - {fileID: 11400000, guid: f417d4544531b8d4395a31f1dde3a837, type: 2}
-  - {fileID: 11400000, guid: 1131c1f7a99f21b4dbbaea402e0078a8, type: 2}
+  - {fileID: 11400000, guid: f8dd10778c605d2478073ee8d189dc30, type: 2}
+  - {fileID: 11400000, guid: 184fd5b9d9609e046bc665a3b8bf443a, type: 2}
+  - {fileID: 11400000, guid: 5dbf3ba9bbb59c647a9ac4d5831036ad, type: 2}
   portrait: {fileID: 0}
-  portraitPath: 
+  portraitPath: Characters/Explorer

@@ -18,5 +18,5 @@ MonoBehaviour:
     \uC55E\uC5D0\uB294 \uB450 \uAC08\uB798 \uAE38\uC774 \uC788\uC2B5\uB2C8\uB2E4."
   nextId: 2
   choices: []
-  portrait: {fileID: 0}
-  portraitPath: 
+  portrait: {fileID: 21300000, guid: a7ec78bd85fa91746a25f3a6d9477f27, type: 3}
+  portraitPath: Characters/Narrator

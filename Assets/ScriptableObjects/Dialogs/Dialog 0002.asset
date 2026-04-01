@@ -17,7 +17,7 @@ MonoBehaviour:
   text: "\uC5B4\uB290 \uAE38\uB85C \uAC00\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
   nextId: -1
   choices:
-  - {fileID: 11400000, guid: cbbe4090ea5962a488ceeacbd381fa30, type: 2}
-  - {fileID: 11400000, guid: 490ac7debf7f382488a4d88f942060df, type: 2}
-  portrait: {fileID: 0}
-  portraitPath: 
+  - {fileID: 11400000, guid: 4c32848fa1ad1c347913406e94ff82e2, type: 2}
+  - {fileID: 11400000, guid: 8337b7add4c57484bbf72b9e7a071a50, type: 2}
+  portrait: {fileID: 21300000, guid: a7ec78bd85fa91746a25f3a6d9477f27, type: 3}
+  portraitPath: Characters/Narrator
