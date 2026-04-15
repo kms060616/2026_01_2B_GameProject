@@ -15,16 +15,21 @@ public class CardDisplay : MonoBehaviour
 
 
     //카드상태
-    private bool isDragging = false;
+    public bool isDragging = false;
     private Vector3 originalPosition;
 
     //레이어 마스크
     public LayerMask enemyLayer;
     public LayerMask playerLayer;
+
+    private CardManager cardManager;
+
     public void Start()
     {
         playerLayer = LayerMask.GetMask("Player");
         enemyLayer = LayerMask.GetMask("Enemy");
+
+        
 
         SetupCard(cardData);
     }
@@ -65,6 +70,16 @@ public class CardDisplay : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (CardManager.Instance.playerStats == null || CardManager.Instance.playerStats.currentMana < cardData.manaCost)
+        {
+            Debug.Log($"마나가 부족합니다 (필요 :{cardData.manaCost}, 현재 :  {CardManager.Instance.playerStats.currentMana}");
+            transform.position = originalPosition;
+            return;
+        }
+
+
+
+
         isDragging = false;
 
         RaycastHit hit;
@@ -108,14 +123,30 @@ public class CardDisplay : MonoBehaviour
                 }
             }
         }
+        else if(CardManager.Instance != null)
+        {
+            float distToDiscard = Vector3.Distance(transform.position, CardManager.Instance.discardPosition.position);
+            if( distToDiscard < 2.0f)
+            {
+                CardManager.Instance.DiscardCard(cardIndex);
+                return;
+            }
+        }
 
-        if(!cardUsed)
+        if (!cardUsed)
         {
             transform.position = originalPosition;
+            CardManager.Instance.ArrangeHand();
         }
         else
         {
-            Destroy(gameObject);
+           if (CardManager.Instance != null)
+            CardManager.Instance.DiscardCard(cardIndex);
+
+
+            CardManager.Instance.playerStats.UseMana(cardIndex);
+            Debug.Log($"마나를 {cardData.manaCost} 사용 했습니다");
+
         }
     }
 

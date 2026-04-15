@@ -10,11 +10,39 @@ public class CharacterStats : MonoBehaviour
     public Slider healthBar;
     public TextMeshPro healthText;
 
+    public int maxMana = 10;
+    public int currentMana;
+    public Slider manaBar;
+    public TextMeshProUGUI manaText;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentHealth = maxHealth;
+        currentMana = maxMana;
+        UpdateUI();
+    }
+
+    public void UseMana(int amount)
+    {
+        currentMana -= amount;
+        if(currentMana < 0)
+        {
+            currentMana = 0;
+        }
+        UpdateUI();
+    }
+
+    public void GainMana(int amount)
+    {
+        currentMana += amount;
+        if (currentMana > maxMana)
+        {
+            currentMana = maxMana;
+
+        }
+        UpdateUI();
     }
 
     
@@ -25,6 +53,27 @@ public class CharacterStats : MonoBehaviour
     public void Heal(int amount)
     {
         currentHealth += amount;
+    }
+
+    private void UpdateUI()
+    {
+        if (healthBar != null)
+        {
+            healthBar.value = (float)currentHealth / maxHealth;
+
+        }
+        if (healthText != null)
+        {
+            healthText.text = $"{currentHealth} / {maxHealth}";
+        }
+        if (manaBar != null)
+        {
+            manaBar.value = (float) currentMana / maxMana;
+        }
+        if (manaText != null)
+        {
+            manaText.text = $"{currentMana} / {maxMana}";
+        }
     }
 
 }
