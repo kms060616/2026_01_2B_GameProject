@@ -605,18 +605,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CardManager
   deckCards:
   - {fileID: 11400000, guid: 1593fffb4a065644784e7282aba8f3d5, type: 2}
+  - {fileID: 11400000, guid: 9c034aeb266d46a47b55845e73a80c36, type: 2}
+  - {fileID: 11400000, guid: 280825fb32e986540bf1b2c6238b4e4e, type: 2}
+  - {fileID: 11400000, guid: bd792ebbe15b6084b900ee9f33f29f6c, type: 2}
+  - {fileID: 11400000, guid: 9aebf5c8e9799e147b73db80b0e74033, type: 2}
+  - {fileID: 11400000, guid: 3d310e4a170f9e24f867fecf51066e1c, type: 2}
   - {fileID: 11400000, guid: 1593fffb4a065644784e7282aba8f3d5, type: 2}
   - {fileID: 11400000, guid: 9c034aeb266d46a47b55845e73a80c36, type: 2}
   - {fileID: 11400000, guid: 280825fb32e986540bf1b2c6238b4e4e, type: 2}
+  - {fileID: 11400000, guid: bd792ebbe15b6084b900ee9f33f29f6c, type: 2}
+  - {fileID: 11400000, guid: 9aebf5c8e9799e147b73db80b0e74033, type: 2}
+  - {fileID: 11400000, guid: 3d310e4a170f9e24f867fecf51066e1c, type: 2}
   - {fileID: 11400000, guid: 1593fffb4a065644784e7282aba8f3d5, type: 2}
   - {fileID: 11400000, guid: 9c034aeb266d46a47b55845e73a80c36, type: 2}
   - {fileID: 11400000, guid: 280825fb32e986540bf1b2c6238b4e4e, type: 2}
-  - {fileID: 11400000, guid: 1593fffb4a065644784e7282aba8f3d5, type: 2}
-  - {fileID: 11400000, guid: 9c034aeb266d46a47b55845e73a80c36, type: 2}
-  - {fileID: 11400000, guid: 280825fb32e986540bf1b2c6238b4e4e, type: 2}
-  - {fileID: 11400000, guid: 1593fffb4a065644784e7282aba8f3d5, type: 2}
-  - {fileID: 11400000, guid: 9c034aeb266d46a47b55845e73a80c36, type: 2}
-  - {fileID: 11400000, guid: 280825fb32e986540bf1b2c6238b4e4e, type: 2}
+  - {fileID: 11400000, guid: bd792ebbe15b6084b900ee9f33f29f6c, type: 2}
+  - {fileID: 11400000, guid: 9aebf5c8e9799e147b73db80b0e74033, type: 2}
+  - {fileID: 11400000, guid: 3d310e4a170f9e24f867fecf51066e1c, type: 2}
   handCards: []
   discardCards: []
   cardPrefabs: {fileID: 6970709857264051321, guid: 937a1fcb32d76f640933f0d7a06dd8c2, type: 3}
@@ -625,6 +630,7 @@ MonoBehaviour:
   discardPosition: {fileID: 2096619255}
   cardObjects: []
   playerStats: {fileID: 2024975362}
+  EnemyState: {fileID: 0}
 --- !u!4 &1399447509
 Transform:
   m_ObjectHideFlags: 0

@@ -1,4 +1,6 @@
+using NUnit.Framework;
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "NewCard", menuName = "Card/Card Data")]
 public class CardData : ScriptableObject
@@ -18,6 +20,19 @@ public class CardData : ScriptableObject
     public int effectAmount;
     public CardType cardType;
 
+    public List<AdditionalEffect> additionalEffects = new List<AdditionalEffect>();
+
+
+    public enum AdditionalEffectType
+    {
+        None,
+        DrawCard,
+        DiscardCard,
+        GainMana,
+        ReduceEnemyMana,
+        ReduceCardCost
+    }
+
 
     public Color GetCardColor()
     {
@@ -35,4 +50,23 @@ public class CardData : ScriptableObject
                 return Color.white;
         }
     }
+
+
+
+    public string GetAdditionalEffectDesription()
+    {
+        if (additionalEffects.Count == 0)
+            return "";
+
+        string result = "\n";
+
+        foreach(var effect in additionalEffects)
+        {
+            result += effect.GetDescription() + "\n";
+
+        }
+
+        return result;
+    }
+
 }

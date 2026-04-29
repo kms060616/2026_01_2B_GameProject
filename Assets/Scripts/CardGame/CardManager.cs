@@ -16,6 +16,7 @@ public class CardManager : MonoBehaviour
     public List<GameObject> cardObjects = new List<GameObject>();
 
     public CharacterStats playerStats;
+    public CharacterStats EnemyStats;
 
     private static CardManager instance;
    
